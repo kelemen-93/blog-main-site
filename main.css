@@ -54,6 +54,8 @@ table {
   box-sizing: border-box;
 }
 
+/* Blog General Styles */ 
+
 .image-blog {
   width: 45.625rem;
   height: 20rem;
@@ -115,6 +117,8 @@ table {
   background-color: #ffffff;
   border-radius: 15px;
 }
+
+/* Vertical Content Genral Styles */
 
 .latest-news, .rec-news, .categories {
   width: 350px;
@@ -228,7 +232,6 @@ body {
   height: 5rem;
   background-color: #6200ea;
   background-repeat: no-repeat;
-  
 }
 
 .sub-button {
@@ -385,6 +388,8 @@ body {
 
 /* === Second Column === */
 
+/* Styles */
+
 /* Positioning */
 
 .latest-news, .rec-news, .categories {
@@ -393,6 +398,8 @@ body {
 
 .second-column {
   margin-bottom: 330px;
+  margin-top: 40px;
+  vertical-align: top;
 }
 
 /* === Categories Styles === */
@@ -412,3 +419,23 @@ body {
   background-color: #ffffff;
   color: #211138;
 }
+
+/* === Footer Styles === */
+
+footer {
+  width: 100%;
+  line-height: 15px;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #211138;
+  padding: 43px 245px 42px;
+  color: #b2acba;
+}
+
+span {
+  color: #6200ea;
+}
+
