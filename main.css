@@ -52,17 +52,162 @@ table {
 
 * {
   box-sizing: border-box;
-  
-}
-
-.small-pic {
-  width: 7.5rem;
-  height: 7.5rem;
 }
 
 .image-blog {
   width: 45.625rem;
   height: 20rem;
+}
+
+.blog {
+  width: 730px;
+  height: 350px;
+}
+
+.blog h1 {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: left;
+  letter-spacing: 0px;
+  font-weight: bold;
+  padding: 15px 0px 15px;
+}
+
+.blog h2 {
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  line-height: 15px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  color: #b2acba;
+}
+
+.blog p {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 0px;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+
+.read-button {
+  width: 160px;
+  line-height: 15px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  padding: 11px 0px 10px;
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #6200ea;
+  border: 2px solid #6200ea;
+  border-radius: 24px;
+}
+
+.blog-wrap {
+  padding: 60px 50px 58px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.latest-news, .rec-news, .categories {
+  width: 350px;
+}
+
+.colour-news {
+  border-radius: 15px 15px 0px 0px;
+  background-color: #6200ea;
+}
+
+.colour-news h2 {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 23px 0px 22px;
+}
+
+.blank-news {
+  border-radius: 0px 0px 15px 15px;
+  background-color: #ffffff;
+}
+
+.blank-news h2 {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #b2acba;
+  padding: 23px 0px 22px;
+}
+
+/* Article General Styles */
+
+.article {
+  background-color: #ffffff;
+  position: relative;
+  height: 160px;
+}
+
+.image-wrap {
+  position: absolute;
+}
+
+.small-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.article h3 {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  line-height: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #6200ea;
+  padding: 20px 0px 15px;
+}
+
+.article p {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 20px;
+  text-align: left;
+  color: #211138;
+  padding-top: 50px;
+}
+
+/* Article General Positioning */
+
+.image-wrap {
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.article h3 {
+  position: absolute;
+  left: 160px;
+}
+
+.article p {
+  position: absolute;
+  left: 160px;
 }
 
 /* === Body Styles === */
@@ -146,22 +291,124 @@ body {
   padding-bottom: 1.75rem;
 }
 
-
-
 /* === Nav Positioning === */
 
 .nav-wrap {
   position: relative;
-  
-  
 }
 
 .hor-nav {
   position: absolute;
   margin-left: 13.40625rem;
-  
 }
 
 .hor-button {
   margin-left: 4.375rem;
+}
+
+/* === Main Content Styles === */
+
+.first-column, .second-column {
+  display: inline-block;
+}
+
+/* === Main Content Positioning === */
+
+.first-column {
+  margin-top: 40px;
+  margin-left: 245px;
+}
+
+.second-column {
+  margin-left: 30px;
+}
+
+/* === First Column === */
+
+/* === Featured Blog Post === */
+
+.featured-post .blog-wrap {
+  background-image: url("assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg");
+  background-size: cover;
+  color: #ffffff;
+}
+
+.featured-post .read-button {
+  border-color: #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* === Article Row Styles === */
+
+.article-row {
+  margin: 30px 0px 30px;
+}
+
+.culture, .business {
+  width: 350px;
+  height: 160px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.business {
+  margin-right: 30px;
+}
+
+/* === Sample Blog Post Styles === */
+
+.sample-blog {
+  margin-bottom: 30px;
+}
+
+/* === Blog Post With Image === */
+
+.pic-blog img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.pic-blog {
+  height: 681px;
+  margin-bottom: 30px;
+}
+
+.pic-blog .blog-wrap {
+  border-radius: 0px 0px 15px 15px;
+}
+
+/* === Another Blog Post === */
+
+.another-blog {
+  margin-bottom: 40px;
+}
+
+/* === Second Column === */
+
+/* Positioning */
+
+.latest-news, .rec-news, .categories {
+  margin-bottom: 30px;
+}
+
+.second-column {
+  margin-bottom: 330px;
+}
+
+/* === Categories Styles === */
+
+.ver-button {
+  width: 100%;
+  line-height: 15px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  padding: 17px 30px 18px;
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #211138;
 }
